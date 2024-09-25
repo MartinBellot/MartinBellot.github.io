@@ -1,26 +1,304 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>TEST</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    </head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
 
-    <body>
-        <h1>test 2</h1>
+<body>
+    <header>
+        <div class="Main-Name">
+            <h1>Raphaël</h1>
+            <h1 class="fourquet">Fourquet</h1>
+        </div>
 
-        <p>Je suis sur la branche dev Raph</p>
+        <nav class="NavBar-Content">
+            <div>
+                <ul>
+                    <li class="active"><a href="#Acceuil" class="navbar">Accueil</a></li>
+                    <li><a href="#Portfolio" class="navbar">Portfolio</a></li>
+                    <li><a href="#Contact" class="navbar">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <h2>Je Rajoute ceci</h2>
+    <section id="Acceuil" class="Acceuil">
+        <h2>A PROPOS</h2>
+        <div class="trait">
+            <hr>
+        </div>
+        <img src="img/Photo.png" class="PhotoProfile">
 
-        <h2>Et cela</h2>
-    </body>
+        <div class="Presentation">
+            <h3>Présentation</h3>
+            <p><span class="highlight">Bonjour</span>
+                , Bienvenue sur mon Portfolio ! Je m'appelle Fourquet Raphaël j'ai 19ans
+                , actuellement étudiant en
+                <span class="highlight">programmation Web</span>
+            </p>
+            <a class="Download-cv" href="https://www.siomende.fr/fourquet/Cv%20Fourquet%20Raphael.pdf"
+                target="_blank">Télecharger mon
+                CV</a>
+        </div>
 
+        <div class="Parcours">
+            <h3>Mon Parcours</h3>
+            <p>Baccalauréat <span class="highlight">Sciences Technologies Management Gestion</span>,
+                Lycée Alexis Monteil
+                Rodez
+                2022
+            </p>
+            <p>BTS <span class="highlight">Services Informatiques aux Organisations </span>,
+                Lycée Emile Peytavin
+                Mende
+                2024
+            </p>
+        </div>
+
+        <div class="Competences">
+            <h3>Mes Compétences</h3>
+            <div class="CompetencesGrid">
+                <p>Programmation Web <img src="img/Visual_logo.png"> </p>
+                <p>Développement Mobile <img src="img/Mobile_logo.png"> </p>
+                <p>Conception Base de données <img src="img/Heidi_Logo.png"> </p>
+                <p>Gestion de Projet <img src="img/Trello_logo.png"> </p>
+                <p>Travail en équipe <img src="img/Github_Logo.png"> </p>
+                <p>Veille Technologique <img src="img/Alerts_Logo.png"> </p>
+                <p>Création Jeux Vidéos <img src="img/Roblox_Logo.png"> </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Portfolio" class="Portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="trait">
+            <hr>
+        </div>
+        <div class="Projets">
+            <h3>Mes Projets</h3>
+            <div class="ProjetsGrid">
+                <div class="projet-section">
+                    <h2>Gérer le patrimoine Informatique</h2>
+                    <p class="title-projet">FBackup9
+                        <br>
+                        <span class="content">- Vérifier les conditions de la continuité d'un service
+                            informatique</span>
+                        <br>
+                        <span class="content">- Gérer des Sauvegardes</span>
+                        <br>
+                        <img src="img/FBackup.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">FBackup9</span>
+                    </p>
+                    <p class="title-projet">ConcreteSecurity
+                        <br>
+                        <span class="content">- Mettre en place et vérifier les niveaux d'habilitation</span>
+                        <br>
+                        <span class="content">- Vérifier les conditions de la continuité d'un service
+                            informatique</span>
+                        <br>
+                        <img src="img/ConcreteSecurity.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Php, CodeIgniter, GitHub, MySql, Notion, Visual Studio</span>
+                        <br>
+                        <a class="Acces-Bouton" href="https://www.siomende.fr/fourquet/concretesecuritygv/"
+                            target="_blank">Accéder</a>
+                    </p>
+                </div>
+                <div class="projet-section">
+                    <h2>Répondre aux incidents et aux demandes d'assistance et d'évolution</h2>
+                    <p class="title-projet">Bornes Museum Exposition
+                        <br>
+                        <span class="content">- Traiter des demandes concernant les applications</span>
+                        <br>
+                        <img src="img/Bornes.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">PhpmyAdmin, Adobe Animate, VisualStudio, JS</span>
+                        <br>
+                        <a class="Acces-Bouton"
+                            href="https://view.genially.com/65080eef9978880010a19f33/presentation-stage-museum-raphael"
+                            target="_blank">Accéder</a>
+                    </p>
+                </div>
+                <div class="projet-section">
+                    <h2>Développer la présence en ligne de l'organisation</h2>
+                    <p class="title-projet">HellsFilms
+                        <br>
+                        <span class="content">- Participer à l'évolution d'un site Web exploitant les données de
+                            l'organisation</span>
+                        <br>
+                        <img src="img/HellsFilms.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Android Studio, Notion, CodeIgniter, Java, MySql</span>
+                    </p>
+                    <p class="title-projet">ConcreteSecurity
+                        <br>
+                        <span class="content">- Participer à la valorisation de l'image de l'organisation sur les médias
+                            numériques</span>
+                        <br>
+                        <span class="content">- Participer à l'évolution d'un site Web exploitant les données de
+                            l'organisation</span>
+                        <br>
+                        <img src="img/ConcreteSecurity.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Php, CodeIgniter, GitHub, MySql, Notion, Visual Studio</span>
+                        <br>
+                        <a class="Acces-Bouton" href="https://www.siomende.fr/fourquet/concretesecuritygv/"
+                            target="_blank">Accéder</a>
+                    </p>
+                </div>
+                <div class="projet-section">
+                    <h2>Travailler en mode projet</h2>
+                    <p class="title-projet">ConcreteSecurity
+                        <br>
+                        <span class="content">- Analyser les objectifs et les modalités d'organisation d'un
+                            projet</span>
+                        <br>
+                        <span class="content">- Planifier les activités</span>
+                        <br>
+                        <span class="content">- Evaluer les indicateurs de suivi d'un projet et analyser les
+                            écarts</span>
+                        <br>
+                        <img src="img/ConcreteSecurity.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Php, CodeIgniter, GitHub, MySql, Notion, Visual Studio</span>
+                        <br>
+                        <a class="Acces-Bouton" href="https://www.siomende.fr/fourquet/concretesecuritygv/"
+                            target="_blank">Accéder</a>
+                    </p>
+                    <p class="title-projet">Dragon Simulator
+                        <br>
+                        <span class="content">- Analyser les objectifs et les modalités d'organisation d'un
+                            projet</span>
+                        <br>
+                        <img src="img/Dragon.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Roblox Studio, Knit FrameWork, GitHub, VisualStudio, Lua,
+                            NodeJs</span>
+                        <br>
+                        <a class="Acces-Bouton"
+                            href="https://view.genially.com/65dc6bf20ce3e00014237822/presentation-waterfalls-presentation"
+                            target="_blank">Accéder</a>
+                    </p>
+                </div>
+                <div class="projet-section">
+                    <h2>Mettre à disposition des utilisateurs un service Informatique</h2>
+                    <p class="title-projet">Prodigniter
+                        <br>
+                        <span class="content">- Réaliser des tests D'intégration et d'acceptation d'un service</span>
+                        <br>
+                        <span class="content">- Déployer un service</span>
+                        <br>
+                        <img src="img/Prodigniter.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Php, CodeIgniter, MySql, VisualStudio</span>
+                        <br>
+                        <a class="Acces-Bouton" href="https://www.siomende.fr/fourquet/prodigniter/"
+                            target="_blank">Accéder</a>
+                    </p>
+                </div>
+                <div class="projet-section">
+                    <h2>Organiser son développement professionnel</h2>
+                    <p class="title-projet">Veille Technologique
+                        <br>
+                        <span class="content">- Mettre en oeuvre des outils et stratégies de veille
+                            informationelle</span>
+                        <br>
+                        <img src="img/Veille.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Google Alerts, Feedly</span>
+                        <br>
+                        <a class="Acces-Bouton"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vQ_GbyD0s1R8rQ6mwijZZRWPEQJdgOxYCf9qKivwPPo_JNWmW14IIhyE3-970DVdolnVfM_cuVtT0Oe/pub?start=false&loop=false&delayms=60000"
+                            target="_blank">Accéder</a>
+                    </p>
+                    <p class="title-projet">Dragon Simulator
+                        <br>
+                        <span class="content">- Développer son projet professionel</span>
+                        <br>
+                        <img src="img/Dragon.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Roblox Studio, Knit FrameWork, GitHub, VisualStudio, Lua,
+                            NodeJs</span>
+                        <br>
+                        <a class="Acces-Bouton"
+                            href="https://view.genially.com/65dc6bf20ce3e00014237822/presentation-waterfalls-presentation"
+                            target="_blank">Accéder</a>
+                    </p>
+                    <p class="title-projet">Mooc CNIL
+                        <br>
+                        <span class="content">- Mettre en place son environnement d'apprentissage personnel</span>
+                        <br>
+                        <span class="content">- Gérer son identité professionelle</span>
+                        <br>
+                        <img src="img/Mooc_Cnil.png">
+                        <br>
+                        <span class="Outils">Outils</span>
+                        <span class="Outils-Content">Google, Site Internet CNIL</span>
+                        <br>
+                        <a class="Acces-Bouton" href="https://atelier-rgpd.cnil.fr/login/index.php"
+                            target="_blank">Accéder</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="Contact">
+        <h2>CONTACT</h2>
+        <div class="trait">
+            <hr>
+        </div>
+        <p>
+            <a class="Liens-Contact" href="https://www.linkedin.com/in/rapha%C3%ABl-fourquet-250129257/"
+                target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="Liens-Contact" href="https://github.com/ultim2503" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </p>
+        <p>
+            <span class="Email-Contact">Contacter moi par Mail</span>
+            <br>
+            <span class="Mail">raphsiomende@gmail.com</span>
+        </p>
+    </section>
 
     <footer>
-        <h1>Ceci est le Titre de mon footer</h1>
+        <p>Fourquet Raphaël &copy; 2023</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll("nav .navbar");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    // Supprimer la classe 'navbar-selected' de tous les liens
+                    navLinks.forEach(link => link.classList.remove("navbar-selected"));
+
+                    // Ajouter la classe 'navbar-selected' au lien cliqué
+                    this.classList.add("navbar-selected");
+                });
+            });
+        });
+    </script>
+</body>
 
 </html>
