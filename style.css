@@ -1,5 +1,279 @@
+/* Global reset */
+
+@font-face {
+    font-family: 'Segoe UI Black';
+    src: url('fonts/segoeUIBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe Print';
+    src: url('fonts/segoeprint.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+/* Header styling */
 header {
     padding: 20px;
     background-color: rgb(61, 61, 61);
     background-size: cover;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+/* Main name styling */
+.Main-Name {
+    font-family: "Segoe Print";
+    color: rgb(252, 252, 252);
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    display: flex;
+}
+
+.Main-Name .fourquet {
+    color: rgb(146, 146, 146);
+    margin: 0px 0px 0px 20px;
+}
+
+/* Navbar styling */
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI Black";
+    color: rgb(252, 252, 252);
+    font-size: 14px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 30px;
+}
+
+.navbar {
+    font-size: 25px;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+}
+
+.NavBar-Content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-selected {
+    color: #00E472;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* Body styling */
+body {
+    margin: auto;
+    background-color: rgb(44, 44, 44);
+}
+
+/* Accueil section styling */
+.Acceuil,
+.Portfolio,
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.Acceuil h2,
+.Portfolio h2,
+.Contact h2 {
+    font-family: "Segoe UI Black";
+    color: #00E472;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Presentation,
+.Parcours,
+.PortfolioContent,
+.ContactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.Presentation h3,
+.Parcours h3,
+.Competences h3,
+.PortfolioContent h3,
+.Projets h3,
+.ContactContent h3 {
+    font-family: "Segoe Print";
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.Presentation p,
+.Parcours p,
+.Competences p,
+.PortfolioContent p,
+.Projets p,
+.Contact p,
+.ContactContent p {
+    font-family: "Segoe UI Black";
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(61, 61, 61);
+    margin: 0px 0px 30px 0px;
+}
+
+.Presentation .highlight,
+.Parcours .highlight,
+.PortfolioContent .highlight,
+.ContactContent .highlight {
+    color: #00E472;
+}
+
+.PhotoProfile {
+    height: 350px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.trait {
+    border-top: 1px solid #000;
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.CompetencesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 20px;
+    /* Space between items */
+    width: 100%;
+    /* Full width */
+    max-width: 700px;
+    /* Max width */
+}
+
+.Competences img {
+    width: 2em;
+    /* Match the size of the text */
+    height: auto;
+    vertical-align: middle;
+    /* Align with the middle of the text */
+}
+
+.Projets h2 {
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 0px 0px 35px 0px;
+}
+
+.Projets .title-projet {
+    font-size: 25px;
+}
+
+.Projets .content {
+    color: #00E472;
+    font-size: 15px;
+}
+
+.Download-cv {
+    color: rgb(58, 58, 58);
+    background: #00E472;
+    font-family: "Segoe Print";
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+
+.Projets img {
+    border-radius: 20px;
+    width: 15em;
+    margin: 15px 0px 0px 0px;
+}
+
+.Liens-Contact {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+
+.Mail {
+    text-decoration: unset;
+    margin: 20px 0px 0px 0px;
+    color: #00E472;
+}
+
+/* Existing styles */
+.projet-section .Acces-Bouton {
+    color: rgb(58, 58, 58);
+    background: #00E472;
+    font-family: "Segoe Print";
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px 15px;
+    display: inline-block;
+    /* Ensure it respects padding and margin */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Add space above the button */
+}
+
+.projet-section .Outils {
+    font-size: 20px;
+}
+
+.projet-section .Outils-Content {
+    color: #a8a8a8;
+    margin: 10px 0px 0px 0px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* New styles */
+.title-projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    /* Adjust if needed */
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-family: DM Sans;
+    background-color: rgb(61, 61, 61);
+    color: rgb(252, 252, 252);
+    padding: 20px 0;
 }
