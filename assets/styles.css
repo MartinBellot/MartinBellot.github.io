@@ -59,12 +59,16 @@ a:hover {
     text-decoration: underline;
 }
 
-
 /* Navigation Bar */
 nav {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -87,6 +91,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main Content */
+main {
+    margin-top: 60px; /* Add margin to avoid content being hidden behind the fixed nav */
+}
+
+.map-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -96,12 +111,22 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
         padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 
     h1 {
